@@ -1,0 +1,74 @@
+
+.App {
+  margin: 4rem;
+
+}
+
+// poll
+.poll-wrapper {
+  h2 {
+   margin-top: 2rem;
+  }
+  button {
+    margin-bottom: 2rem;
+  }
+  // poll questions
+  .bx--form-item {
+    margin: 2rem 0;
+    width: 100px;
+  }
+  // display poll results
+  .graph {
+    margin: 2rem 0;
+  }
+  .poll-wrapper {
+    display: flex;
+  }
+  .poll-wrapper .answer-text {
+    font-size: 0.875rem;
+    line-height: 1.2rem;
+    width: 45px;
+    margin-top: 18px;
+  }
+  .poll-wrapper:nth-child(3) .answer-text {
+    margin-top: 7px;
+  }
+  .bar-wrapper {
+    background-color: #dcdcdc;
+    width: 500px;
+    margin-bottom: 15px;
+  }
+  .poll-wrapper .bar {
+    height: 48px;
+  }
+  .poll-wrapper .answer-score {
+    margin-top: 8px;
+    font-size: 0.875rem;
+    line-height: 1.2rem;
+    width: 80px;
+    margin-left: 1rem;
+    span {
+      display: block;
+    }
+  }
+  .poll-wrapper .bar {
+    transition: width 1s ease;
+    transition-delay: 0.3s;
+    width: 0%;
+  }
+  .poll-wrapper:nth-child(1) .bar {
+    background: #97c1ff;
+  }
+
+  .poll-wrapper:nth-child(2) .bar {
+    background: #ffa4a9;
+  }
+
+  .poll-wrapper:nth-child(3) .bar {
+    background: #ccc;
+  }
+  .total-votes {
+    margin: 1rem 0 3rem;
+  }
+
+}
